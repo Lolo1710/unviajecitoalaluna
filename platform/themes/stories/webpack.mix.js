@@ -1,0 +1,14 @@
+let mix = require('laravel-mix');
+
+const path = require('path');
+let directory = path.basename(path.resolve(__dirname));
+
+const source = 'platform/themes/' + directory;
+const dist = 'public/themes/' + directory;
+
+mix
+    .sass(source + '/assets/sass/custom.scss', dist + '/css')
+    .js(source + '/assets/js/backend.js', dist + '/js')
+
+    .copy(dist + '/css/custom.css', source + '/public/css')
+    .copy(dist + '/js/backend.js', source + '/public/js');

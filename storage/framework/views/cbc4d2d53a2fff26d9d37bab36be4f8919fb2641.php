@@ -1,0 +1,1 @@
+<div class="text-center language-column"><?php echo $data; ?></div><?php /**PATH /home/inmobi85/unviajecitoalaluna.bestlinecancun.com/platform/plugins/language/resources/views//partials/language-column.blade.php ENDPATH**/ ?>
